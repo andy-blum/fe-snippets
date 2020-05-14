@@ -39,6 +39,7 @@ const focusTrap = {
     this.active = true;
     this.container = container;
     this.items = [];
+    this.trigger = trigger;
     trap = this;
     Array.from(container.querySelectorAll(this.selectables)).forEach(function(el){
       if (el.getBoundingClientRect().width > 0) {
